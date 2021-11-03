@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(img/fondo.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.ficha{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    background-color: #fff;
+    height: 70%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px #0B237A;
+}
+.img-ficha{
+    padding: 8px;
+}
+.img-ficha img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 0px 8px #69BBFA;
+}
+.title-ficha{
+    padding: 0 8px;
+    color: #0B237A;
+}
+
+.pg-ficha span{
+    font-size: 50px;
+}
+.pg-ficha span a{
+    text-decoration: none;
+}
+.pg-ficha span i{
+    font-size: 40px;
+    color: #69BBFA;
+}
+.pg-ficha span i:hover{
+    transform: rotate(10deg);
+    color: #7dd87d;
+}
+@media (min-width:769px) and (max-width:1023px){
+    .ficha{
+        height: 60%;
+    }
+}
+
+@media (min-width:1024px) and (max-width:1215px){
+    .ficha{
+        height: 70%;
+    }
+}
+@media (min-width:1216px) and (max-width:1407px){
+    .ficha{
+        height: 60%;
+        
+    }
+}
